@@ -1,0 +1,181 @@
+{
+  "DB Connections": {
+    "FullDumpPath": "C:/BTI/Logs/FullDump/",
+    "Database": {
+      "Ip": "200.163.186.227",
+      "Port": "3306",
+      "Instance": "cadastro",
+      "User": "Bti38",
+      "Password": "nWxvZIsoCeTZar+p1zmujg==",
+      "Protocol": "",
+      "ServiceName": "",
+      "ServiceId": "",
+      "Schema": "",
+      "ConnectionString": "",
+      "FullDump": true,
+      "SslMode": true,
+      "SslCertPath": "C:/TesteBanco/Config/Certificados/server.crt"
+    }
+  },
+  "SAP Connections": {
+    "SAP": {
+      "User": "RFC_BTI",
+      "Password": "vWpnV9B0CObZar+p1zmujg==",
+      "SystemId": "100",
+      "Language": "PT",
+      "ApplicationServer": "10.79.136.120",
+      "InstanceNumber": "10",
+      "PoolSize": "5",
+      "Trace": "8"
+    }
+  },
+  "WebSocket": {
+    "SocketClient": {
+      "Ip": "192.168.0.129",
+      "Port": "11000"
+    },
+    "SocketServer": {
+      "Ip": "0.0.0.0",
+      "Port": "11000",
+      "Tara": true,
+      "GrossWeight": true,
+      "WaitingTime": 10
+    }
+  },
+  "CNCs": [
+    {
+      "CNC": [
+        {
+          "IPCNC": "192.168.1.72",
+          "Port": 8193,
+          "TimeOut": 10,
+          "Variables": [
+            {
+              "VariableCodeCNC": "501;10",
+              "VariableCodeBES": null,
+              "Type": "RdMacro",
+              "TypeCNC": "RdMacro"
+            }
+          ],
+          "Configserver": {
+            "Server": null,
+            "Port": 0,
+            "Topic": null,
+            "ClientId": null,
+            "DeviceId": null,
+            "User": null,
+            "Password": null
+          }
+        }
+      ]
+    }
+  ],
+  "Umovme": {
+    "ApiToken": "25327e8c54cf4f8c62717efbff4f144cf2d83",
+    "Import": {
+      "DirectoryNewFolder": "C:/Crediare/Cargas/Importacao/Ciclo/",
+      "DirectoryLoadFolder": "C:/Crediare/Cargas/Importacao/Load/",
+      "DirectoryOldFolder": "C:/Crediare/Cargas/Importacao/Anterior/"
+    },
+    "Export": {
+      "DirectoryNewFolder": "C:/Crediare/Cargas/Exportacao/Ciclo/",
+      "EnvironmentName": "CREDIARE",
+      "TaskFilename": true
+    }
+  },
+  "FTP Connections": {
+    "FtpUmovme": {
+      "Host": "ftp://files.umov.me",
+      "User": "master.abrabe",
+      "Password": "vWxvFokpC97Ya76o1jivjw==",
+      "BufferSize": "2048"
+    },
+    "FTPCrediare": {
+      "Host": "ftp://ftp.crediare.com.br/",
+      "User": "cobranca",
+      "Password": "vHdkVoorG97Ya76o1jivjw==",
+      "BufferSize": "8192"
+    }
+  },
+  "LogFramework": {
+    "Standard": {
+      "SmtpServer": "smtp.gmail.com",
+      "SmtpPort": 587,
+      "SmtpAuthentication": "Basic",
+      "SmtpUserName": "chamado@btiestrategica.com.br",
+      "EnableSsl": true,
+      "From": "chamado@btiestrategica.com.br",
+      "Password": "nWxvZIgqC+PZar+p1zmujg==",
+      "To": "chamado@btiestrategica.com.br",
+      "Cc": "chamado@btiestrategica.com.br",
+      "EnableEmail": true,
+      "LogError": {
+        "ErrorMaxArchiveFiles": 31,
+        "ErrorKeepFileOpen": true,
+        "ErrorConcurrentWrites": true,
+        "ErrorSubject": "ERRO CLIENTE|Erro no cliente X"
+      },
+      "LogInfo": {
+        "InfoMaxArchiveFiles": 31,
+        "InfoKeepFileOpen": true,
+        "InfoConcurrentWrites": true
+      },
+      "LogClient": {
+        "ClientMaxArchiveFiles": 31,
+        "ClientKeepFileOpen": true,
+        "ClientConcurrentWrites": true,
+        "ClientSubject": "FATAL CLIENTE|Erro fatal no cliente X"
+      }
+    }
+  },
+    "API Connections": {
+      "Teste": {
+        "Url": "http://200.98.128.38:5286/TESTE",
+        "User": "TESTE",
+        "Password": "6H5DQdwsXP3Zar+p1zmujg==",
+        "RequestMethod": "POST",
+        "NtlmAuthentication": true,
+        "Body": false,
+        "ContentType": ""
+      },
+      "API": {
+        "Url": "http://200.98.128.38:5286/PostData",
+        "User": "Administrator",
+        "Password": "6H5DQdwsXP3Zar+p1zmujg==",
+        "RequestMethod": "POST",
+        "NtlmAuthentication": true,
+        "Body": false,
+        "ContentType": ""
+      },
+      "Email Conection": {
+        "Gmail": {
+          "Host": "smtp.gmail.com",
+          "Port": "587",
+          "Email": "chamado@btiestrategica.com.br",
+          "Password": "nWxvZIgqC+PZar+p1zmujg=="
+        }
+      },
+      "MQTT": {
+        "Subscriber": {
+          "Server": "200.98.128.11",
+          "Port": 1883,
+          "ClientId": "gateway",
+          "User": "bti",
+          "Password": "7io1KbQVNdrcb7qs0jyriw==",
+          "Topics": [
+            { "Topic": "Teste/igor" },
+            { "Topic": "NOVUS" },
+            { "Topic": "CNC" }
+          ]
+        },
+        "Publisher": {
+          "Server": "200.98.128.11",
+          "Port": 1883,
+          "ClientId": "reprocessor",
+          "User": "bti",
+          "Password": "7io1KbQVNdrcb7qs0jyriw==",
+          "Topic": "Teste/igor"
+        }
+      }
+    }
+  }
